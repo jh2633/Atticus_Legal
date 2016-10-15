@@ -1,0 +1,85 @@
+//GLOBAL STYLES
+
+/* RGB */
+$color1: rgba(5, 102, 141, 1);
+$color2: rgba(66, 122, 161, 1);
+$color3: rgba(235, 242, 250, 1);
+$color4: rgba(22, 124, 54, 1);
+$color5: rgba(94, 168, 25, 1);
+
+.font-lg {
+  font-size: 2em;
+}
+
+.no-deco {
+  li {
+    list-style: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: #888;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.bkgrnd1 {
+  background-color: $color1;
+}
+.bkgrnd2 {
+  background-color: $color2;
+}
+.bkgrnd3 {
+  background-color: $color3;
+}
+.bkgrnd4 {
+  background-color: $color4;
+}
+.bkgrnd5 {
+  background-color: $color5;
+}
+
+.vert-pad-lg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.vert-pad-md {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.vert-pad-sm {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.text-shad {
+  text-shadow: 2px 2px #666;
+}
+//HOME PAGE STYLES
+
+.welcome-jumbo {
+  background-image: url("../img/leaves.jpg");
+  background-size: cover;
+  background-color: #cccccc;
+  padding: 100px 0;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+#nav-header {
+  font-size: 2em;
+}
+
+#logo {
+  height: 50px;
+  margin-top: -15px;
+}
