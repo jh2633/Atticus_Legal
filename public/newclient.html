@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Atticus</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+   <nav class="navbar navbar-inverse navbar-default">
+     <div class="container header bkgrnd1">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#"><img src="img/atticus.png" id="logo"></a>
+         <a class="navbar-brand" href="#" id="nav-header">Atticus</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+
+   <div class="body">
+
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-12 vert-pad-lg">
+           <form class="form-horizontal">
+           <fieldset>
+
+           <!-- Form Name -->
+           <legend class="bkgrnd5 white-text text-center font-lg">New Client Profile</legend>
+
+           <!-- Text input-->
+           <div class="form-group">
+             <label class="col-md-4 control-label" for="name">Name</label>
+             <div class="col-md-4">
+             <input id="name" name="name" type="text" placeholder="Your full name" class="form-control input-md" required="">
+             <span class="help-block">Enter your full name here</span>
+             </div>
+           </div>
+
+           <!-- Text input-->
+           <div class="form-group">
+             <label class="col-md-4 control-label" for="age">Age</label>
+             <div class="col-md-4">
+             <input id="age" name="age" type="text" placeholder="" class="form-control input-md" required="">
+             <span class="help-block">Enter your age in years</span>
+             </div>
+           </div>
+
+           <!-- Select Basic -->
+           <div class="form-group">
+             <label class="col-md-4 control-label" for="gender">Gender</label>
+             <div class="col-md-4">
+               <select id="gender" name="gender" class="form-control">
+                 <option value="1">Male</option>
+                 <option value="2">Female</option>
+               </select>
+             </div>
+           </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="contact">Phone Number</label>
+            <div class="col-md-4">
+            <input id="contact" name="contact" type="text" placeholder="" class="form-control input-md" required="">
+            <span class="help-block">Enter your phone number including the area code</span>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="post_code">Postcode</label>
+            <div class="col-md-4">
+            <input id="post_code" name="post_code" type="text" placeholder="" class="form-control input-md">
+            <span class="help-block">Enter your postcode</span>
+            </div>
+          </div>
+
+           <!-- Multiple Radios -->
+           <div class="form-group">
+             <label class="col-md-4 control-label" for="citizenship">UK Citizen</label>
+             <div class="col-md-4">
+             <div class="radio">
+               <label for="citizenship-0">
+                 <input type="radio" name="citizenship" id="citizenship-0" value="1" checked="checked">
+                 Yes
+               </label>
+           	</div>
+             <div class="radio">
+               <label for="citizenship-1">
+                 <input type="radio" name="citizenship" id="citizenship-1" value="2">
+                 No
+               </label>
+           	</div>
+             </div>
+           </div>
+
+           <!-- Multiple Radios -->
+           <div class="form-group">
+             <label class="col-md-4 control-label" for="language">Do you speak English?</label>
+             <div class="col-md-4">
+             <div class="radio">
+               <label for="language-0">
+                 <input type="radio" name="language" id="language-0" value="1" checked="checked">
+                 Yes
+               </label>
+           	</div>
+             <div class="radio">
+               <label for="language-1">
+                 <input type="radio" name="language" id="language-1" value="2">
+                 No
+               </label>
+           	</div>
+             </div>
+           </div>
+
+           <!-- Button -->
+           <div class="form-group">
+             <!-- <label class="col-md-4 control-label" for="saveProfile">Save and Continue</label> -->
+             <div class="col-md-4 col-md-offset-4 text-center">
+               <button id="saveProfile" name="saveProfile" class="btn btn-primary btn-lg">Save and Continue</button>
+             </div>
+           </div>
+
+           </fieldset>
+           </form>
+
+         </div>
+       </div>
+    </div>
+
+   </div>
+
+   <div class="footer bkgrnd1 white-text navbar-default navbar-fixed-bottom">
+     <div class="container-fluid vert-pad-lg">
+       <div class="row">
+         <div class="col-xs-6">
+           <ul class="no-deco text-center">
+             <li>Privacy Policy</li>
+             <li>Law Centre Network</li>
+           </ul>
+         </div>
+         <div class="col-xs-6">
+           <ul class="no-deco text-center">
+             <li>&#169; 2016</li>
+             <li>Icons made by <a href="http://www.flaticon.com/authors/vectors-market" title="Vectors Market" class="white-links">Vectors Market</a> and <a href="http://www.freepik.com" title="Freepik" class="white-links">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" class="white-links">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" class="white-links" target="_blank">CC 3.0 BY</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+
+
+   </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
