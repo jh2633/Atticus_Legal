@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161015093402) do
+ActiveRecord::Schema.define(version: 20161015120553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 20161015093402) do
 
   create_table "cases", force: :cascade do |t|
     t.text     "user_background"
-    t.string   "issue_type"
     t.text     "issue_desc"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
@@ -42,6 +41,13 @@ ActiveRecord::Schema.define(version: 20161015093402) do
     t.string   "attachment_content_type"
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
+    t.boolean  "benefits"
+    t.boolean  "working"
+    t.boolean  "income"
+    t.boolean  "disability"
+    t.integer  "public_id"
+    t.text     "issue_type"
+    t.index ["public_id"], name: "index_cases_on_public_id", using: :btree
   end
 
   create_table "publics", force: :cascade do |t|
@@ -57,8 +63,16 @@ ActiveRecord::Schema.define(version: 20161015093402) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
+    t.integer  "age"
+    t.string   "gender"
+    t.string   "citizenship"
+    t.string   "language"
+    t.string   "post_code"
+    t.integer  "contact"
     t.index ["email"], name: "index_publics_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_publics_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "cases", "publics"
 end
