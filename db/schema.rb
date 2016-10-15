@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161015120553) do
+ActiveRecord::Schema.define(version: 20161015132634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,11 @@ ActiveRecord::Schema.define(version: 20161015120553) do
     t.integer  "public_id"
     t.text     "issue_type"
     t.index ["public_id"], name: "index_cases_on_public_id", using: :btree
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "publics", force: :cascade do |t|

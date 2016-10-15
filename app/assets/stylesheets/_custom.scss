@@ -7,8 +7,12 @@ $color3: rgba(235, 242, 250, 1);
 $color4: rgba(22, 124, 54, 1);
 $color5: rgba(94, 168, 25, 1);
 
+.font-ex-lg {
+  font-size: 5em !important;
+}
+
 .font-lg {
-  font-size: 2em;
+  font-size: 2em !important;
 }
 
 .no-deco {
@@ -31,7 +35,11 @@ $color5: rgba(94, 168, 25, 1);
 
 body {
   font-family: 'Muli', sans-serif;
-  color: #888;
+  color: #999;
+}
+
+.body {
+  margin-bottom: 108px;
 }
 
 .white-text {
@@ -71,6 +79,20 @@ body {
   padding-bottom: 7px;
 }
 
+.top-pad-lg {
+  padding-top: 30px;
+}
+.top-pad-md {
+  padding-top: 15px;
+}
+.top-pad-sm {
+  padding-top: 7px;
+}
+
+.btn-ex-lrg {
+  padding: 15px 24px !important;
+}
+
 .text-shad {
   text-shadow: 2px 2px #666;
 }
@@ -88,10 +110,30 @@ body {
 }
 
 #nav-header {
-  font-size: 2em;
+  font-size: 2.5em;
+  text-shadow: 1px 1px #000;
 }
 
 #logo {
   height: 50px;
   margin-top: -15px;
+}
+
+#girl_pic {
+  height: 120px;
+  display: inline-block;
+}
+
+#quote {
+  display: inline-block;
+}
+
+//FORMS
+
+textarea {
+  height: 200px !important;
+}
+
+.form {
+  background-color: #eee;
 }
