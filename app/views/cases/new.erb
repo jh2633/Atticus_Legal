@@ -1,0 +1,28 @@
+<style>
+html, body, .container-table {
+   height: 100%;
+}
+.container-table {
+   display: table;
+}
+.vertical-center-row {
+   display: table-cell;
+   vertical-align: middle;
+}
+</style>
+<div class="container container-table">
+<div class="row vertical-center-row">
+
+  <div class="text-center col-md-4 col-md-offset-4">
+<%= form_for @case do |case_param| %>
+
+Please provide a written description of your legal issue:
+<br>
+<br>
+<%= case_param.text_area :issue_desc, size: "30x10" %>
+
+<% end %>
+<input type="submit" action="cases#create" method="post"></form>
+</div>
+</div>
+</div>
