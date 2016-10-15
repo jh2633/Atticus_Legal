@@ -43,11 +43,173 @@
            <form class="form-horizontal">
            <fieldset>
 
-           <!-- Form Name -->
-           <legend class="bkgrnd5 white-text text-center font-lg">Tell Us About Your Background and Problem</legend>
 
+           <form class="form-horizontal">
+             <fieldset>
 
-           </fieldset>
+             <!-- Form Name -->
+             <legend class="bkgrnd4 white-text text-center font-lg">Your Background</legend>
+
+             <!-- Multiple Radios -->
+             <div class="form-group">
+               <label class="col-md-4 control-label" for="income">Is your income over £20k? (this is the legal aid limit)</label>
+               <div class="col-md-4">
+               <div class="radio">
+                 <label for="income-0">
+                   <input type="radio" name="income" id="income-0" value="1" checked="checked">
+                   Yes
+                 </label>
+             	</div>
+               <div class="radio">
+                 <label for="income-1">
+                   <input type="radio" name="income" id="income-1" value="2">
+                   No
+                 </label>
+             	</div>
+               </div>
+             </div>
+
+             <!-- Multiple Radios -->
+             <div class="form-group">
+               <label class="col-md-4 control-label" for="disability">Do you have a disability?</label>
+               <div class="col-md-4">
+               <div class="radio">
+                 <label for="disability-0">
+                   <input type="radio" name="disability" id="disability-0" value="1" checked="checked">
+                   Yes
+                 </label>
+             	</div>
+               <div class="radio">
+                 <label for="disability-1">
+                   <input type="radio" name="disability" id="disability-1" value="2">
+                   No
+                 </label>
+             	</div>
+               </div>
+             </div>
+
+             <!-- Multiple Radios -->
+             <div class="form-group">
+               <label class="col-md-4 control-label" for="benefits">Do you receive benefits?</label>
+               <div class="col-md-4">
+               <div class="radio">
+                 <label for="benefits-0">
+                   <input type="radio" name="benefits" id="benefits-0" value="1" checked="checked">
+                   Yes
+                 </label>
+             	</div>
+               <div class="radio">
+                 <label for="benefits-1">
+                   <input type="radio" name="benefits" id="benefits-1" value="2">
+                   No
+                 </label>
+             	</div>
+               </div>
+             </div>
+
+             <!-- Multiple Radios -->
+             <div class="form-group">
+               <label class="col-md-4 control-label" for="working">Do you work?</label>
+               <div class="col-md-4">
+               <div class="radio">
+                 <label for="working-0">
+                   <input type="radio" name="working" id="working-0" value="1" checked="checked">
+                   Yes
+                 </label>
+             	</div>
+               <div class="radio">
+                 <label for="working-1">
+                   <input type="radio" name="working" id="working-1" value="2">
+                   No
+                 </label>
+             	</div>
+               </div>
+             </div>
+
+             </fieldset>
+             <fieldset>
+
+               <!-- Form Name -->
+             <legend class="bkgrnd2 white-text text-center font-lg">Your Problem</legend>
+
+               <!-- Multiple Checkboxes -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="issue_type">Please indicate the areas that relate to your problem</label>
+                 <div class="col-md-4">
+                 <div class="checkbox">
+                   <label for="issue_type-0">
+                     <input type="checkbox" name="issue_type" id="issue_type-0" value="Housing">
+                     Housing
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-1">
+                     <input type="checkbox" name="issue_type" id="issue_type-1" value="Family">
+                     Family
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-2">
+                     <input type="checkbox" name="issue_type" id="issue_type-2" value="Employment">
+                     Employment
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-3">
+                     <input type="checkbox" name="issue_type" id="issue_type-3" value="Welfare">
+                     Welfare
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-4">
+                     <input type="checkbox" name="issue_type" id="issue_type-4" value="Debt">
+                     Debt
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-5">
+                     <input type="checkbox" name="issue_type" id="issue_type-5" value="Immigration">
+                     Immigration
+                   </label>
+               	</div>
+                 <div class="checkbox">
+                   <label for="issue_type-6">
+                     <input type="checkbox" name="issue_type" id="issue_type-6" value="Other">
+                     Other
+                   </label>
+               	</div>
+                 </div>
+               </div>
+
+               <!-- Textarea -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="issue_desc">Please describe your problem</label>
+                 <div class="col-md-7">
+                   <textarea class="form-control" id="issue_desc" name="issue_desc">Try to keep this short and clear</textarea>
+                 </div>
+               </div>
+
+               <!-- File Button -->
+               <div class="form-group">
+                 <label class="col-md-4 control-label" for="upload_file">Attachments</label>
+                 <div class="col-md-4">
+                   <input id="upload_file" name="upload_file" class="input-file" type="file">
+                 </div>
+               </div>
+               <div class="col-md-4 col-md-offset-4">
+                 <p>
+                   Please make sure to attach scans or photographs of all relevant documents.
+                </p>
+              </div>
+               <!-- Button -->
+               <div class="form-group">
+                 <!-- <label class="col-md-4 control-label" for="saveProfile">Save and Continue</label> -->
+                 <div class="col-md-4 col-md-offset-4 text-center">
+                   <button id="saveProblem" name="saveProfile" class="btn btn-primary btn-lg">Submit</button>
+                 </div>
+               </div>
+
+             </fieldset>
            </form>
 
          </div>

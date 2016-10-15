@@ -5813,7 +5813,10 @@ button.close {
 
 body {
   font-family: 'Muli', sans-serif;
-  color: #888; }
+  color: #999; }
+
+.body {
+  margin-bottom: 108px; }
 
 .white-text {
   color: #fff !important; }
@@ -5866,5 +5869,11 @@ body {
 #logo {
   height: 50px;
   margin-top: -15px; }
+
+textarea {
+  height: 200px !important; }
+
+form {
+  background-color: #eee; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,7 +31,11 @@ $color5: rgba(94, 168, 25, 1);
 
 body {
   font-family: 'Muli', sans-serif;
-  color: #888;
+  color: #999;
+}
+
+.body {
+  margin-bottom: 108px;
 }
 
 .white-text {
@@ -94,4 +98,15 @@ body {
 #logo {
   height: 50px;
   margin-top: -15px;
+}
+
+
+//FORMS
+
+textarea {
+  height: 200px !important;
+}
+
+form {
+  background-color: #eee;
 }
