@@ -21,13 +21,25 @@ $color5: rgba(94, 168, 25, 1);
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
 body {
   font-family: 'Muli', sans-serif;
   color: #888;
 }
 
 .white-text {
-  color: #fff;
+  color: #fff !important;
+}
+
+.white-links {
+    color: #fff !important;
 }
 
 .bkgrnd1 {
