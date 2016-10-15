@@ -1,0 +1,11 @@
+// import custom bootstrap variables that serve as overrides to base bootstrap settings
+
+@import "_customVariables";
+
+// import bootstrap scss
+
+@import "_bootstrap";
+
+// import custom scss which contains any custom sass that we wish to add to the project
+
+@import "_custom";
